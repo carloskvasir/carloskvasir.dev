@@ -11,6 +11,10 @@ const Home = () => (
     <p>
       I develop projects mostly with Ruby on Rails.
     </p>
+    <p>
+      {`Check out mostly `}
+      <a href="/projects">projects</a>
+    </p>
   </Layout>
 );
 

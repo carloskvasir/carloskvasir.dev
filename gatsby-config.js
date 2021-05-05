@@ -9,6 +9,6 @@ module.exports = {
     title: 'Gatsby',
   },
   plugins: [
-    // 'gatsby-plugin-react-helmet',
+    'gatsby-plugin-react-helmet',
   ],
 }
