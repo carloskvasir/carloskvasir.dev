@@ -1,15 +1,15 @@
 import React from "react"
 import { Link } from "gatsby"
-import Helmet from "react-helmet"
 
 import Layout from "../components/Layout"
+import SEO from "../components/SEO"
 
 const Home = () => (
   <Layout>
-    <Helmet title="Carlos Lima" />
-    <h1>Carlos Lima</h1>
+    <SEO />
+    <h1>Carlos Kvasir</h1>
     <h2>Backend developer</h2>
-    <h4>Hello, I'm Carlos Lima</h4>
+    <h4>Hello, I'm Carlos Lima Junior but in internet aka Carlos Kvasir</h4>
     <p>{`I'm a Backend Developer and study about devops.`}</p>
     <p>I develop projects mostly with Ruby on Rails.</p>
     <p>
