@@ -5,11 +5,9 @@
  */
 
 module.exports = {
-  siteMetadata:{
-    title: 'Carlos Kvasir',
-    user: 'carloskvasir'
+  siteMetadata: {
+    title: "Carlos Kvasir",
+    user: "carloskvasir",
   },
-  plugins: [
-    'gatsby-plugin-react-helmet',
-  ],
+  plugins: ["gatsby-plugin-react-helmet"],
 }
