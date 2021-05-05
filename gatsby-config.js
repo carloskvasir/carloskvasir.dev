@@ -5,6 +5,10 @@
  */
 
 module.exports = {
-  /* Your site config here */
-  plugins: [],
+  siteMetadata:{
+    title: 'Gatsby',
+  },
+  plugins: [
+    // 'gatsby-plugin-react-helmet',
+  ],
 }
