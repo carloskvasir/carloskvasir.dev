@@ -1,9 +1,12 @@
 import React from 'react';
+import {Link} from 'gatsby'
+import Helmet from 'react-helmet'
 
 import Layout from '../components/Layout';
 
 const Home = () => (
   <Layout>
+    <Helmet title="Carlos Lima"/>
     <h1>Carlos Lima</h1>
     <h2>Backend developer</h2>
     <h4>Hello, I'm Carlos Lima</h4>
@@ -13,7 +16,7 @@ const Home = () => (
     </p>
     <p>
       {`Check out mostly `}
-      <a href="/projects">projects</a>
+      <Link to="/projects">projects</Link>
     </p>
   </Layout>
 );
