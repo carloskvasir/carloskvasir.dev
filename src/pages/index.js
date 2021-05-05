@@ -4,9 +4,13 @@ import Layout from '../components/Layout';
 
 const Home = () => (
   <Layout>
-    <h1>Hello world!</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
+    <h1>Carlos Lima</h1>
+    <h2>Backend developer</h2>
+    <h4>Hello, I'm Carlos Lima</h4>
+    <p>{`I'm a Backend Developer and study about devops.`}</p>
+    <p>
+      I develop projects mostly with Ruby on Rails.
+    </p>
   </Layout>
 );
 
