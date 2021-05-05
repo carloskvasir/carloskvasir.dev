@@ -2,11 +2,11 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/Layout"
-import SEO from "../components/SEO"
+import Seo from "../components/Seo"
 
 const Home = () => (
   <Layout>
-    <SEO />
+    <Seo />
     <h1>Carlos Kvasir</h1>
     <h2>Backend developer</h2>
     <h4>Hello, I'm Carlos Lima Junior but in internet aka Carlos Kvasir</h4>

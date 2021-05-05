@@ -13,7 +13,7 @@ const siteQuery = graphql`
   }
 `
 
-const SEO = ({ pageTitle }) => (
+const Seo = ({ pageTitle }) => (
   <StaticQuery
     query={siteQuery}
     render={data => (
@@ -25,11 +25,11 @@ const SEO = ({ pageTitle }) => (
   />
 )
 
-SEO.propTypes = {
+Seo.propTypes = {
   pageTitle: PropTypes.string,
 }
-SEO.defaultProps = {
+Seo.defaultProps = {
   pageTitle: null,
 }
 
-export default SEO
+export default Seo
