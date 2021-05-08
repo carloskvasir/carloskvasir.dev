@@ -7,7 +7,8 @@
 module.exports = {
   siteMetadata: {
     title: 'Carlos Kvasir',
-    user: 'carloskvasir'
+    user: 'carloskvasir',
+    siteUrl: 'https://carloskvasir.dev'
   },
-  plugins: ['gatsby-plugin-react-helmet']
+  plugins: ['gatsby-plugin-react-helmet', 'gatsby-plugin-sass']
 };
