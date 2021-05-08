@@ -4,32 +4,32 @@ import { Helmet } from 'react-helmet';
 import PropTypes from 'prop-types';
 
 const siteQuery = graphql`
-    query DefaultSEOQuery {
-        site {
-            siteMetadata {
-                title
-            }
-        }
+  query DefaultSEOQuery {
+    site {
+      siteMetadata {
+        title
+      }
     }
+  }
 `;
 
 const Seo = ({ pageTitle }) => (
-    <StaticQuery
-        query={siteQuery}
-        render={data => (
-            <Helmet
-                title={pageTitle || data.site.siteMetadata.title}
-                titleTemplate={pageTitle && `%s | ${data.site.siteMetadata.title}`}
-            />
-        )}
-    />
+  <StaticQuery
+    query={siteQuery}
+    render={data => (
+      <Helmet
+        title={pageTitle || data.site.siteMetadata.title}
+        titleTemplate={pageTitle && `%s | ${data.site.siteMetadata.title}`}
+      />
+    )}
+  />
 );
 
 Seo.propTypes = {
-    pageTitle: PropTypes.string
+  pageTitle: PropTypes.string
 };
 Seo.defaultProps = {
-    pageTitle: null
+  pageTitle: null
 };
 
 export default Seo;
