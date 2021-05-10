@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import Helmet from 'react-helmet';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
@@ -11,30 +12,24 @@ const Home = () => (
       description="Back-end developer, developing apps and apis"
       keywords="Ruby, Rails, API, developer"
     />
-    <Helmet>
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      />
-    </Helmet>
     <header className="has-text-centered">
       <h1 className="title">Carlos Kvasir</h1>
       <h2 className="subtitle">Backend developer</h2>
     </header>
     <section className="has-text-centered">
       <a href="https://github.com/carloskvasir" aria-label="github">
-        <span className="icon is-large">
-          <i className="fab fa-2x fa-github" />
+        <span className="icon is-large fa-2x">
+          <FontAwesomeIcon icon={faGithub} />
         </span>
       </a>
       <a href="https://twitter.com/carloskvasir" aria-label="twitter">
-        <span className="icon is-large">
-          <i className="fab fa-2x fa-twitter" />
+        <span className="icon is-large fa-2x">
+          <FontAwesomeIcon icon={faTwitter} />
         </span>
       </a>
       <a href="https://linkedin.com/in/carloskvasir/" aria-label="linkedin">
-        <span className="icon is-large">
-          <i className="fab fa-2x fa-linkedin" />
+        <span className="icon is-large fa-2x">
+          <FontAwesomeIcon icon={faLinkedin} />
         </span>
       </a>
     </section>
