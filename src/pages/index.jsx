@@ -6,6 +6,9 @@ import { faGithub, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-ic
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 
+import '../styles/home.scss';
+import photo from '../assets/images/carloskvasir.png';
+
 const Home = () => (
   <Layout>
     <Seo
@@ -13,6 +16,9 @@ const Home = () => (
       keywords="Ruby, Rails, API, developer"
     />
     <header className="has-text-centered">
+      <figure className="image is-128x128">
+        <img className="is-rounded" src={photo} alt="Carlos Kvasir" />
+      </figure>
       <h1 className="title">Carlos Kvasir</h1>
       <h2 className="subtitle">Backend developer</h2>
     </header>
