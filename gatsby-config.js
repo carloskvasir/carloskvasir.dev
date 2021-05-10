@@ -10,5 +10,8 @@ module.exports = {
     user: 'carloskvasir',
     siteUrl: 'https://carloskvasir.dev'
   },
-  plugins: ['gatsby-plugin-react-helmet', 'gatsby-plugin-sass']
+  plugins: [
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-sitemap` ]
 };

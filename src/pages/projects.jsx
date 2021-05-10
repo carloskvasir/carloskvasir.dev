@@ -5,7 +5,11 @@ import Layout from '../components/Layout';
 
 const Projects = () => (
   <Layout>
-    <Seo pageTitle="Projects" />
+    <Seo
+      pageTitle="Projects"
+      description="Back-end developer, developing apps and apis"
+      keywords="Ruby, Rails, API, developer"
+    />
     <section className="section is-size-4-desktop is-size-5-touch">
       <h1 className="title has-text-centered">Projects</h1>
       <hr />

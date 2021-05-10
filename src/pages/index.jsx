@@ -6,7 +6,10 @@ import Seo from '../components/Seo';
 
 const Home = () => (
   <Layout>
-    <Seo />
+    <Seo
+      description="Back-end developer, developing apps and apis"
+      keywords="Ruby, Rails, API, developer"
+    />
     <header className="has-text-centered">
       <h1 className="title">Carlos Kvasir</h1>
       <h2 className="subtitle">Backend developer</h2>
