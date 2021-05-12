@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faTwitter, faLinkedin, faTelegram } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin, faTelegram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
@@ -16,14 +16,14 @@ const Home = () => (
       keywords="Ruby, Rails, API, developer"
     />
     <header className="has-text-centered">
-      <figure className="image is-a128x128">
+      <figure className="image">
         <StaticImage
           className="is-rounded"
           src="../assets/images/carloskvasir.png"
           alt="Carlos Kvasir"
           placeholder="blurred"
-          width={200}
-          height={200}
+          width={150}
+          height={150}
         />
       </figure>
       <h1 className="title">Carlos Kvasir</h1>
