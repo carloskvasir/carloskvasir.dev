@@ -11,6 +11,7 @@ const siteQuery = graphql`
       siteMetadata {
         title
         user
+        siteUrl
       }
     }
   }
