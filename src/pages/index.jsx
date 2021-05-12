@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import { StaticImage } from 'gatsby-plugin-image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faTwitter, faLinkedin, faTelegram } from '@fortawesome/free-brands-svg-icons';
 
 import Layout from '../components/Layout';
 import Seo from '../components/Seo';
 
 import '../styles/home.scss';
-import photo from '../assets/images/carloskvasir.png';
 
 const Home = () => (
   <Layout>
@@ -16,8 +16,15 @@ const Home = () => (
       keywords="Ruby, Rails, API, developer"
     />
     <header className="has-text-centered">
-      <figure className="image is-128x128">
-        <img className="is-rounded" src={photo} alt="Carlos Kvasir" />
+      <figure className="image is-a128x128">
+        <StaticImage
+          className="is-rounded"
+          src="../assets/images/carloskvasir.png"
+          alt="Carlos Kvasir"
+          placeholder="blurred"
+          width={200}
+          height={200}
+        />
       </figure>
       <h1 className="title">Carlos Kvasir</h1>
       <h2 className="subtitle">Backend developer</h2>
@@ -31,6 +38,11 @@ const Home = () => (
       <a href="https://twitter.com/carloskvasir" aria-label="twitter">
         <span className="icon is-large fa-2x">
           <FontAwesomeIcon icon={faTwitter} />
+        </span>
+      </a>
+      <a href="https://t.me/carloskvasir" aria-label="Telegram">
+        <span className="icon is-large fa-2x">
+          <FontAwesomeIcon icon={faTelegram} />
         </span>
       </a>
       <a href="https://linkedin.com/in/carloskvasir/" aria-label="linkedin">

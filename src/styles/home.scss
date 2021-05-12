@@ -1,3 +1,8 @@
 .image {
   margin: 48px auto 24px;
+
+  .is-rounded {
+    border: solid 2px black;
+    border-radius: 50%;
+  }
 }
