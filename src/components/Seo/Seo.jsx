@@ -54,7 +54,7 @@ Seo.propTypes = {
   meta: PropTypes.arrayOf(PropTypes.object)
 };
 Seo.defaultProps = {
-  pageTitle: null,
+  pageTitle: 'Carlos Kvasir',
   description: '',
   keywords: '',
   meta: []
