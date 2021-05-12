@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
 
-import ogImage from '../assets/images/carloskvasir.png';
+import ogImage from '../../assets/images/carloskvasir.png';
 
 const siteQuery = graphql`
   query DefaultSEOQuery {
