@@ -12,6 +12,7 @@ import '../styles/home.scss';
 const Home = () => (
   <Layout>
     <Seo
+      pageTitle="Home"
       description="Back-end developer, developing apps and apis"
       keywords="Ruby, Rails, API, developer"
     />
