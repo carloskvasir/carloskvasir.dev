@@ -5,7 +5,6 @@ import Layout from '../components/Layout';
 import { graphql, Link } from 'gatsby';
 
 export default function Posts({ data }) {
-  console.log(data);
   const posts = data.allMarkdownRemark.nodes;
   return (
     <Layout>
@@ -14,17 +13,19 @@ export default function Posts({ data }) {
         description="Back-end developer, developing apps and apis"
         keywords="Ruby, Rails, API, developer"
       />
-      <h1>Posts</h1>
-      <div>
-        {posts.map(post => (
-          <Link to={`/posts/${post.frontmatter.slug}`} key={post.id}>
-            <div>
-              <h3>{post.frontmatter.title}</h3>
-              <p>{post.frontmatter.stack}</p>
-            </div>
-          </Link>
-        ))}
-      </div>
+      <section className="section content is-size-4-desktop is-size-5-touch">
+        <h1 className="title">Posts</h1>
+        <div>
+          {posts.map(post => (
+            <Link to={`/posts/${post.frontmatter.slug}`} key={post.id}>
+              <div>
+                <h2 className="subtitle">{post.frontmatter.title}</h2>
+                <p>{post.frontmatter.stack}</p>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
     </Layout>
   );
 }
