@@ -1,8 +1,11 @@
 import React from 'react';
 
+import { graphql, Link } from 'gatsby';
+
 import Seo from '../components/Seo';
 import Layout from '../components/Layout';
-import { graphql, Link } from 'gatsby';
+
+import '../styles/index.scss';
 
 export default function Posts({ data }) {
   const posts = data.allMarkdownRemark.nodes;

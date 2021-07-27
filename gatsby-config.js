@@ -17,7 +17,11 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-sitemap`,
-    `gatsby-transformer-remark`,
+    {
+      resolve:`gatsby-transformer-remark`,
+      options:{
+        plugins: [{resolve: `gatsby-remark-highlight-code`, options:{ terminal: 'carbon', theme: 'blackboard', terminal: false}},]},
+      },
     {
       resolve: `gatsby-source-filesystem`,
       options : {
