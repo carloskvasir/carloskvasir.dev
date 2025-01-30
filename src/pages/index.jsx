@@ -5,18 +5,21 @@ import { StaticImage } from 'gatsby-plugin-image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faTelegram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
-import Layout from '../components/Layout';
-import Seo from '../components/Seo';
+import Layout from '@components/Layout';
+import Seo from '@components/Seo';
 
 import '../styles/home.scss';
 
+export const Head = () => (
+  <Seo
+    pageTitle="Home"
+    description="Back-end developer, developing apps and apis"
+    keywords="Ruby, Rails, API, developer"
+  />
+);
+
 const Home = () => (
   <Layout>
-    <Seo
-      pageTitle="Home"
-      description="Back-end developer, developing apps and apis"
-      keywords="Ruby, Rails, API, developer"
-    />
     <header className="has-text-centered">
       <figure className="image">
         <StaticImage

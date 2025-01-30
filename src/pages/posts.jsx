@@ -2,20 +2,23 @@ import React from 'react';
 
 import { graphql, Link } from 'gatsby';
 
-import Seo from '../components/Seo';
-import Layout from '../components/Layout';
+import Seo from '@components/Seo';
+import Layout from '@components/Layout';
 
 import '../styles/index.scss';
 
-export default function Posts({ data }) {
+export const Head = () => (
+  <Seo
+    pageTitle="Posts"
+    description="Back-end developer, developing apps and apis"
+    keywords="Ruby, Rails, API, developer"
+  />
+);
+
+const Posts = ({ data }) => {
   const posts = data.allMarkdownRemark.nodes;
   return (
     <Layout>
-      <Seo
-        pageTitle="Posts"
-        description="Back-end developer, developing apps and apis"
-        keywords="Ruby, Rails, API, developer"
-      />
       <section className="section content is-size-4-desktop is-size-5-touch">
         <h1 className="title">Posts</h1>
         <div>
@@ -34,17 +37,18 @@ export default function Posts({ data }) {
 }
 
 export const query = graphql`
-  query BlogPosts {
-    allMarkdownRemark {
-      nodes {
-        frontmatter {
-          title
-          stack
-          slug
-          plublished
-        }
-        id
+query BlogPosts {
+  allMarkdownRemark(filter: { frontmatter: { published: { eq: true } } }) {
+    nodes {
+      frontmatter {
+        title
+        stack
+        slug
       }
+      id
     }
   }
+}
 `;
+
+export default Posts;

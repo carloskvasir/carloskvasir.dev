@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
+import './Header.scss';  // Import the SCSS file
 
 class Header extends Component {
   constructor(props) {
@@ -11,8 +12,8 @@ class Header extends Component {
   }
 
   handleMenu = () => {
-    this.setState(previusState => ({
-      isMenuOpen: !previusState.isMenuOpen
+    this.setState(previousState => ({
+      isMenuOpen: !previousState.isMenuOpen
     }));
   };
 
@@ -20,7 +21,7 @@ class Header extends Component {
     this.setState({ isMenuOpen: false });
   };
 
-  render = () => {
+  render() {
     const { siteTitle } = this.props;
     const { isMenuOpen } = this.state;
     const burgerClass = isMenuOpen ? 'is-active' : '';
@@ -30,7 +31,7 @@ class Header extends Component {
         <div className="container">
           <div className="navbar-brand">
             <Link className="navbar-item is-size-4" to="/">
-              CarlosKvasir.dev
+              {siteTitle || "carloskvasir.dev"}
             </Link>
             <button
               className={`navbar-burger ${burgerClass}`}
@@ -58,15 +59,11 @@ class Header extends Component {
         </div>
       </nav>
     );
-  };
+  }
 }
 
-//Header.propTypes = {
-//  siteTitle: PropTypes.string
-//};
-//
-//Header.defaultProps = {
-//  siteTitle: ''
-//};
+Header.propTypes = {
+  siteTitle: PropTypes.string
+};
 
 export default Header;

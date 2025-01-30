@@ -2,7 +2,7 @@
 title: Code
 stack: HTML & CSS
 slug: test-code
-plublished: true
+published: true
 ---
 
 ```bash

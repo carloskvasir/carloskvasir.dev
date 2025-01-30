@@ -23,9 +23,12 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
+    'plugin:@typescript-eslint/recommended',
     'plugin:jsx-a11y/recommended',
     'plugin:prettier/recommended' // Make this the last element so prettier config overrides other formatting rules
   ],
+  parser: '@typescript-eslint/parser',
+  plugins: ['@typescript-eslint'],
   rules: {
     'react/no-unescaped-entities': 0,
     'prettier/prettier': ['error', {}, { usePrettierrc: true }] // Use our .prettierrc file as source
