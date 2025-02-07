@@ -33,9 +33,23 @@ const Projects = () => {
   const projects = data.allProjectJson.edges.map(edge => edge.node);
 
   function projectRender(projeto) {
+    const imageId = Math.abs(
+      projeto.name.split("").reduce((acc, char) => acc + char.charCodeAt(0), 0) % 100
+    );
+
     return (
       <div key={projeto.id} className="column is-one-third">
         <div className="card">
+
+
+          <div className="card-image">
+            <figure className="image is-4by3">
+              <img
+                src={`https://picsum.photos/seed/${imageId}/400/300`}
+                alt={`Imagem ilustrativa do projeto ${projeto.name}`}
+              />
+            </figure>
+          </div>
           <div className="card-content">
             <h3 className="title is-4">{projeto.name}</h3>
             <p className="subtitle is-6">{projeto.description}</p>
