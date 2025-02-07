@@ -49,7 +49,7 @@ class Header extends Component {
                 Home
               </Link>
               <Link className="navbar-item is-size-5" to="/projects" onClick={this.closeMenu}>
-                Projects
+                Projetos
               </Link>
               <Link className="navbar-item is-size-5" to="/posts" onClick={this.closeMenu}>
                 Posts
