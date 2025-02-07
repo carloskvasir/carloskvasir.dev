@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
-import './Header.scss';  // Import the SCSS file
+import './Header.scss';
 
 class Header extends Component {
   constructor(props) {
@@ -31,13 +31,14 @@ class Header extends Component {
         <div className="container">
           <div className="navbar-brand">
             <Link className="navbar-item is-size-4" to="/">
-              {siteTitle || "carloskvasir.dev"}
+              {siteTitle || 'carloskvasir.dev'}
             </Link>
             <button
               className={`navbar-burger ${burgerClass}`}
               type="button"
               aria-label="menu"
-              onClick={this.handleMenu}>
+              onClick={this.handleMenu}
+            >
               <span aria-hidden="true" />
               <span aria-hidden="true" />
               <span aria-hidden="true" />

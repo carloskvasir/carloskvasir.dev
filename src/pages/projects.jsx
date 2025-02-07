@@ -34,14 +34,12 @@ const Projects = () => {
 
   function projectRender(projeto) {
     const imageId = Math.abs(
-      projeto.name.split("").reduce((acc, char) => acc + char.charCodeAt(0), 0) % 100
+      projeto.name.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0) % 100
     );
 
     return (
       <div key={projeto.id} className="column is-one-third">
         <div className="card">
-
-
           <div className="card-image">
             <figure className="image is-4by3">
               <img
@@ -74,9 +72,7 @@ const Projects = () => {
       <section className="section is-size-4-desktop is-size-5-touch">
         <h1 className="title has-text-centered">Projetos</h1>
 
-        <div className="columns is-multiline">
-          {projects.map(projectRender)}
-        </div>
+        <div className="columns is-multiline">{projects.map(projectRender)}</div>
         <p className="has-text-centered">
           {'Veja mais dos meus projetos no meu '}
           <a href="http://github.com/carloskvasir">GitHub</a>
