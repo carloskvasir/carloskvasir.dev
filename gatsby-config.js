@@ -26,6 +26,13 @@ module.exports = {
         path: `${__dirname}/src/posts`
       }
     },
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/assets/data/`,
+      },
+    },
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
@@ -37,6 +44,7 @@ module.exports = {
           // safelist: ['safelist'], // Don't remove this selector
         },
       },
-    }
+    },
+    `gatsby-transformer-json`
   ]
 };
