@@ -1,25 +1,31 @@
 [
   {
-    "name": "Terraform in Action",
-    "description": "Exemplos práticos de Terraform para AWS",
-    "url": "https://github.com/carloskvasir/terraform-in-action",
-    "repository": "https://github.com/carloskvasir/terraform-in-action",
-    "tags": [
-      "terraform",
-      "aws",
-      "iac"
-    ]
+    "name": "API de Monitoramento Climático",
+    "description": "Uma API para coletar e analisar dados meteorológicos de diferentes regiões do mundo.",
+    "url": "https://github.com/carloskvasir/api-clima",
+    "repository": "https://github.com/carloskvasir/api-clima",
+    "tags": ["Node.js", "Express", "API", "Meteorologia"]
   },
   {
-    "name": "Terraform in Action",
-    "description": "Exemplos práticos de Terraform para AWS",
-    "url": "https://github.com/carloskvasir/terraform-in-action",
-    "repository": "https://github.com/carloskvasir/terraform-in-action",
-    "tags": [
-      "terraform",
-      "aws",
-      "iac"
-    ]
+    "name": "Plataforma de Aprendizado Online",
+    "description": "Um sistema para cursos online, incluindo videoaulas, avaliações e certificações.",
+    "url": "https://github.com/carloskvasir/edu-tech",
+    "repository": "https://github.com/carloskvasir/edu-tech",
+    "tags": ["Ruby on Rails", "React", "Educação", "EAD"]
+  },
+  {
+    "name": "Gestor de Finanças Pessoais",
+    "description": "Aplicativo web para controle de gastos, orçamento e relatórios financeiros pessoais.",
+    "url": "https://github.com/carloskvasir/financas-app",
+    "repository": "https://github.com/carloskvasir/financas-app",
+    "tags": ["Elixir", "Phoenix", "Finanças", "Web App"]
+  },
+  {
+    "name": "Plataforma de Doações Comunitárias",
+    "description": "Sistema que conecta doadores e ONGs para facilitar doações e campanhas sociais.",
+    "url": "https://github.com/carloskvasir/doe-mais",
+    "repository": "https://github.com/carloskvasir/doe-mais",
+    "tags": ["Python", "Django", "Doações", "Impacto Social"]
   },
   {
     "name": "Terraform in Action",
