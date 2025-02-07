@@ -4,6 +4,7 @@ module.exports = {
     __PATH_PREFIX__: true
   },
   root: true, // Make sure eslint picks up the config at the root of the directory
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 2020, // Use the latest ecmascript standard
     sourceType: 'module', // Allows using import/export statements
@@ -24,13 +25,12 @@ module.exports = {
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
-    'plugin:jsx-a11y/recommended',
-    'plugin:prettier/recommended' // Make this the last element so prettier config overrides other formatting rules
+    'prettier'
   ],
-  parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint'],
+  plugins: ['@typescript-eslint', 'react', 'prettier'],
   rules: {
     'react/no-unescaped-entities': 0,
-    'prettier/prettier': ['error', {}, { usePrettierrc: true }] // Use our .prettierrc file as source
+    'prettier/prettier': 'error',
+    'react/prop-types': 'off'
   }
 };

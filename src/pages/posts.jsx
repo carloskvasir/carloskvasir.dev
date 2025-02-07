@@ -34,21 +34,21 @@ const Posts = ({ data }) => {
       </section>
     </Layout>
   );
-}
+};
 
 export const query = graphql`
-query BlogPosts {
-  allMarkdownRemark(filter: { frontmatter: { published: { eq: true } } }) {
-    nodes {
-      frontmatter {
-        title
-        stack
-        slug
+  query BlogPosts {
+    allMarkdownRemark(filter: { frontmatter: { published: { eq: true } } }) {
+      nodes {
+        frontmatter {
+          title
+          stack
+          slug
+        }
+        id
       }
-      id
     }
   }
-}
 `;
 
 export default Posts;

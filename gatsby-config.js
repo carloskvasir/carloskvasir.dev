@@ -6,7 +6,7 @@
 
 module.exports = {
   siteMetadata: {
-    title: 'Carlos Kvasir',
+    title: 'carlos kvasir',
     user: 'carloskvasir',
     siteUrl: 'https://carloskvasir.dev'
   },

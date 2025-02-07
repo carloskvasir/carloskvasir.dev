@@ -22,7 +22,9 @@ const Seo = ({ pageTitle, description, keywords, meta }) => {
 
   return (
     <>
-      <title>{pageTitle ? `${pageTitle} | ${site.siteMetadata.title}` : site.siteMetadata.title}</title>
+      <title>
+        {pageTitle ? `${pageTitle} | ${site.siteMetadata.title}` : site.siteMetadata.title}
+      </title>
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
       <meta name="twitter:card" content="summary" />

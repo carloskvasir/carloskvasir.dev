@@ -57,12 +57,29 @@ const Home = () => (
       </a>
     </section>
     <section className="section content is-size-4-desktop is-size-5-touch">
-      <h4 className="title">Hello, I'm Carlos Lima Junior but in internet aka Carlos Kvasir</h4>
-      <p>I'm a Backend Developer and study about devops.</p>
-      <p>I develop projects mostly with Ruby on Rails.</p>
+      <h4 className="title">Olá, sou Carlos Kvasir! 🚀</h4>
       <p>
-        {'Check out mostly '}
-        <Link to="/projects">projects</Link>
+        Desde 2019, atuo no desenvolvimento de software, sempre movido pela curiosidade e paixão por
+        entender como grandes sistemas são projetados para suportar altas demandas e como são
+        mantidos ao longo do tempo.
+      </p>
+      <p>
+        Atualmente, trabalho como desenvolvedor Ruby, utilizando Ruby on Rails, onde aprimoro
+        constantemente minhas habilidades em padrões de projeto, desenvolvimento ágil e soluções
+        escaláveis.
+      </p>
+      <p>
+        Além do meu trabalho com Ruby e Rails, também possuo experiência em Elixir, Docker,
+        Kubernetes, Terraform e Digital Ocean, permitindo-me atuar em diferentes áreas do
+        desenvolvimento backend. Estou sempre em busca de novos desafios para evoluir minhas
+        habilidades e contribuir para o sucesso dos projetos em que atuo.
+      </p>
+      <p>
+        📌 <strong>Áreas de interesse:</strong> Arquitetura de software, escalabilidade, DevOps e
+        boas práticas no desenvolvimento backend.
+      </p>
+      <p>
+        <Link to="/projects"> 🔗 Confira meus projetos </Link>
       </p>
     </section>
   </Layout>

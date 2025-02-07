@@ -15,7 +15,6 @@ export const Head = ({ data }) => {
   );
 };
 
-
 const PostPage = ({ data }) => {
   const {
     markdownRemark: { html }

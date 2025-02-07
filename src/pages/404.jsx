@@ -6,11 +6,7 @@ import Seo from '@components/Seo';
 import '../styles/home.scss';
 
 export const Head = () => (
-  <Seo
-    pageTitle="404: Not Found"
-    description="404: Not Found"
-    keywords="404, not-found"
-  />
+  <Seo pageTitle="404: Not Found" description="404: Not Found" keywords="404, not-found" />
 );
 
 const NotFoundPage = () => (

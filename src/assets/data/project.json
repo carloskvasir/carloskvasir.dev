@@ -32,10 +32,6 @@
     "description": "Exemplos práticos de Terraform para AWS",
     "url": "https://github.com/carloskvasir/terraform-in-action",
     "repository": "https://github.com/carloskvasir/terraform-in-action",
-    "tags": [
-      "terraform",
-      "aws",
-      "iac"
-    ]
+    "tags": ["terraform", "aws", "iac"]
   }
 ]
