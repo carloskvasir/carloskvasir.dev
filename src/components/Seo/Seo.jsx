@@ -25,6 +25,7 @@ const Seo = ({ pageTitle, description, keywords, meta }) => {
       <title>
         {pageTitle ? `${pageTitle} | ${site.siteMetadata.title}` : site.siteMetadata.title}
       </title>
+      {pageTitle === 'Home' && <link href="https://mastodon.social/@carloskvasir" rel="me" />}
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
       <meta name="twitter:card" content="summary" />
