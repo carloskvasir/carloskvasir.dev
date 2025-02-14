@@ -81,6 +81,9 @@ const Home = () => (
       <p>
         <Link to="/projects"> 🔗 Confira meus projetos </Link>
       </p>
+      <a rel="me" href="https://mastodon.social/@carloskvasir" className="hidden-link">
+        Mastodon
+      </a>
     </section>
   </Layout>
 );
