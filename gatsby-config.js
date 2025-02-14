@@ -8,7 +8,7 @@ module.exports = {
   siteMetadata: {
     title: 'carlos kvasir',
     user: 'carloskvasir',
-    siteUrl: 'https://carloskvasir.dev'
+    siteUrl: 'https://carloskvasir.dev',
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -23,8 +23,8 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `blog-posts`,
-        path: `${__dirname}/src/posts`
-      }
+        path: `${__dirname}/src/posts`,
+      },
     },
     `gatsby-transformer-json`,
     {
@@ -36,15 +36,14 @@ module.exports = {
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
-        printRejected: false,
-        develop: false,
-        tailwind: false,
+        printRejected: true, // Imprime seletores removidos e nomes de arquivos processados
+        develop: false, // Desabilita durante o desenvolvimento
+        tailwind: false, // Desabilita suporte ao TailwindCSS
         purgeCSSOptions: {
-          // https://purgecss.com/configuration.html#options
-          // safelist: ['safelist'], // Don't remove this selector
+          safelist: [], // Adicione seletores que não devem ser removidos
         },
       },
     },
-    `gatsby-transformer-json`
-  ]
+    `gatsby-transformer-json`,
+  ],
 };
