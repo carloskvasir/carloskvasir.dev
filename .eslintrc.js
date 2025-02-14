@@ -25,12 +25,14 @@ module.exports = {
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
-    'prettier'
+    'prettier',
+    'plugin:@eslint-community/eslint-comments/recommended'
   ],
-  plugins: ['@typescript-eslint', 'react', 'prettier'],
+  plugins: ['@typescript-eslint', 'react', 'prettier', '@eslint-community/eslint-comments'],
   rules: {
     'react/no-unescaped-entities': 0,
     'prettier/prettier': 'error',
-    'react/prop-types': 'off'
+    'react/prop-types': 'off',
+    '@eslint-community/eslint-comments/no-unused-disable': 'error'
   }
 };

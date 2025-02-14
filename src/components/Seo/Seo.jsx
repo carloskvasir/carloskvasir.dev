@@ -41,6 +41,7 @@ const Seo = ({ pageTitle, description, keywords, meta }) => {
       <meta property="og:image:width" content="750" />
       <meta property="og:image:height" content="750" />
       {meta && meta.map((m, i) => <meta key={i} {...m} />)}
+      { title === 'Home' && <link href="https://mastodon.social/@carloskvasir" rel="me"></link> }
     </>
   );
 };

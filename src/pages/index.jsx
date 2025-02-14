@@ -3,7 +3,13 @@ import { Link } from 'gatsby';
 
 import { StaticImage } from 'gatsby-plugin-image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin, faTelegram, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import {
+  faGithub,
+  faLinkedin,
+  faTelegram,
+  faTwitter,
+  faMastodon
+} from '@fortawesome/free-brands-svg-icons';
 
 import Layout from '@components/Layout';
 import Seo from '@components/Seo';
@@ -55,6 +61,11 @@ const Home = () => (
           <FontAwesomeIcon icon={faLinkedin} />
         </span>
       </a>
+      <a rel="me" href="https://mastodon.social/@carloskvasir" aria-label="mastodon">
+        <span className="icon is-large fa-2x">
+          <FontAwesomeIcon icon={faMastodon} />
+        </span>
+      </a>
     </section>
     <section className="section content is-size-4-desktop is-size-5-touch">
       <h4 className="title">Olá, sou Carlos Kvasir! 🚀</h4>
@@ -81,9 +92,6 @@ const Home = () => (
       <p>
         <Link to="/projects"> 🔗 Confira meus projetos </Link>
       </p>
-      <a rel="me" href="https://mastodon.social/@carloskvasir" className="hidden-link">
-        Mastodon
-      </a>
     </section>
   </Layout>
 );
